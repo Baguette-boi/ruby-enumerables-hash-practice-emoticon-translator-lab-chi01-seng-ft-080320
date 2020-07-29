@@ -14,11 +14,11 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
  emoticons = load_library(file_path)
- #japanese_equiv = " "
+ japanese_equiv = " "
   emoticon = emoticons.keys.find do |k|
     
     emoticons[k][:english] == emoticon
-   # japanese_equiv = emoticons[k][:japanese]
+   japanese_equiv = emoticons[k][:japanese]
   end
   binding.pry
  #if match_emo
