@@ -20,12 +20,12 @@ def get_japanese_emoticon(file_path, emoticon)
     emoticons[k][:english] == emoticon
    #japanese_equiv = emoticons[k][:japanese]
   end
-  binding.pry
- #if match_emo
-#   return emoticons[match_emo][:japanese]
-# else 
-#   "Sorry, that emoticon was not found"
-#   end
+  #binding.pry
+ if emoticon
+  return emoticons[emoticon][:japanese]
+else 
+  "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning(file_path, emoticon)
